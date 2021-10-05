@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "mix --production",
+    "dev": "mix watch"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "sass": "^1.42.1"
+  },
+  "browserslist": [
+    ">0.25%",
+    "not ie 11",
+    "not op_mini all"
+  ],
+  "name": "steiner",
+  "description": "![WordPlate](https://cloud.githubusercontent.com/assets/499192/24309675/09eec350-10cd-11e7-98f3-094003bc8e15.png)",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "laravel-mix": "^6.0.31"
+  }
+}
