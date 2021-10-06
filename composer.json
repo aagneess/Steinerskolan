@@ -51,9 +51,5 @@
             "type:wordpress-muplugin",
             "wpackagist-plugin/hide-updates"
         ]
-    },
-    "require": {
-        "wordplate/framework": "^10.0",
-        "wpackagist-plugin/hide-updates": "^1.1"
     }
 }

@@ -8,3 +8,12 @@ add_action('after_setup_theme', function () {
         'navigation' => __('Navigation'),
     ]);
 });
+
+/* ADDITIONAL CSS/SCSS */
+function additional_custom_styles()
+{
+
+    /*Enqueue The Styles*/
+    wp_enqueue_style('uniquestylesheetid', get_template_directory_uri() . '/resources/styles/style.scss');
+}
+add_action('wp_enqueue_scripts', 'additional_custom_styles');
