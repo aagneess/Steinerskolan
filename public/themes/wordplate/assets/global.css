@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* :root {
+  --fuschia: #ed4b9e;
+  --iris: #4b4ded;
+  --peach: #f3d9da;
+  --onyx: #0e0e2c;
+  --evergreen: #31d0aa;
+  --slate: #4a4a68;
+  --light-slate: #8c8ca1;
+  --dorian: #ecf1f4;
+  --cloud: #fafcfe;
+} */
+
+:root {
+  --purple: #a25dd8;
+  --red: #db625d;
+  --orange: #e78e5c;
+  --yellow: #f7d348;
+  --green: #6db97b;
+  --teal: #347681;
+  --blue: #4273b4;
+  --grey: #ecf1f4;
+  --white: #fafcfe;
+}
+
+@font-face {
+  font-family: "antropos";
+  src: url("/resources/fonts/antropos.woff2");
+  font-style: normal;
+  font-weight: 300;
+}
