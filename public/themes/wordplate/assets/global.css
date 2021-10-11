@@ -19,16 +19,27 @@
   --red: #db625d;
   --orange: #e78e5c;
   --yellow: #f7d348;
-  --green: #6db97b;
+  --green: #92cb9c;
   --teal: #347681;
   --blue: #4273b4;
+  --light-blue: #6e96ca;
   --grey: #ecf1f4;
   --white: #fafcfe;
 }
 
 @font-face {
   font-family: "antropos";
-  src: url("/resources/fonts/antropos.woff2");
-  font-style: normal;
-  font-weight: 300;
+  src: url("./fonts/antropos.woff2") format("woff2");
+}
+@font-face {
+  font-family: "heading";
+  src: url("./fonts/WorkSans-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "main";
+  src: url("./fonts/WorkSans-Light.woff2") format("woff2");
+}
+
+.pages {
+  margin-top: 10rem;
 }

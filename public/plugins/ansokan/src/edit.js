@@ -4,7 +4,7 @@ import { RichText, useBlockProps } from "@wordpress/block-editor";
 import "./editor.scss";
 
 export default function Edit({ attributes, setAttributes }) {
-	const { title, heading, body, link, linkName } = attributes;
+	const { title, heading, body } = attributes;
 
 	// custom functions
 	function onChangeTitle(newTitle) {

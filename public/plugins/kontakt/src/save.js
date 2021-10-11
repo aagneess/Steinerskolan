@@ -6,10 +6,12 @@ export default function save({ attributes }) {
 	const blockProps = useBlockProps.save();
 
 	return (
-		<div class="ansokan-container" {...blockProps}>
-			<h2>{title}</h2>
-			<RichText.Content tagName="h3" value={heading} />
+		<div class="kontakt-container" {...blockProps}>
+			<h3>{title}</h3>
 			<RichText.Content tagName="p" value={body} />
+			<p>Telefon: {phone}</p>
+			<p>Email: {email}</p>
+			{/* <RichText.Content tagName="p" value={email} /> */}
 		</div>
 	);
 }

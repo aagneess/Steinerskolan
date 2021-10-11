@@ -1,34 +1,77 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?= language_attributes(); ?>>
 
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta charset="<?= bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= get_theme_file_uri('assets/global.css') ?>">
+    <link rel="stylesheet" href="<?= get_theme_file_uri('assets/media.css') ?>">
     <link rel="stylesheet" href="<?= get_theme_file_uri('assets/header.css') ?>">
     <link rel="stylesheet" href="<?= get_theme_file_uri('assets/footer.css') ?>">
 
-    <?php wp_head(); ?>
+    <?= wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-    <?php wp_body_open(); ?>
+<body <?= body_class(); ?>>
+    <?= wp_body_open(); ?>
 
     <header>
+
+        <section class="logo">
+            <img class="logo-image" src="http://localhost:8000/uploads/2021/10/Logotyp.svg" alt="Logga med skolbyggnad" />
+            <img class="logo-text" src="http://localhost:8000/uploads/2021/10/RS.svg" alt="Rudolf Steiner textlogga" />
+        </section>
+
         <nav role="navigation">
-            <?php
-            $pages = get_pages();
-            foreach ($pages as $page) {
-            ?>
-                <a href="<?php echo get_page_link($page->ID) ?>" class="header-link"><?php echo $page->post_title ?></a>
-            <?php
-            } ?>
+            <?php $menuItems = menu('navigation'); ?>
+            <?php foreach ($menuItems as $menuItem) : ?>
+                <?php if (sizeof($menuItem->children) === 0) : ?>
+                    <!-- SINGLE PAGES -->
+                    <a class="single-page" href="<?= $menuItem->url; ?>">
+                        <?= $menuItem->title; ?>
+                    </a>
+                <?php else : ?>
+                    <!-- PARENTS -->
+                    <a class="parent-pages" href="<?= $menuItem->url; ?>">
+                        <?= $menuItem->title; ?>
+                    </a>
+
+                    <!-- CHILDREN -->
+                    </div class="sub-pages">
+                    <ul>
+                        <?php foreach ($menuItem->children as $child) : ?>
+
+                            <li>
+                                <a class="child-pages" href="<?= $child->url ?>">
+                                    <?= $child->title; ?>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                    </div>
+
+                <?php endif; ?>
+            <?php endforeach; ?>
+
+
+
+
+
+
+            <div class="social">
+                <button class="social-links">
+                    <img class="insta" src="<?= get_template_directory_uri(); ?>/assets/logo/fb.png" alt="facebook button" /></button>
+                <button class="social-links">
+                    <img class="facebook" src="<?= get_template_directory_uri(); ?>/assets/logo/insta.png" alt="instagram button" /></button>
+            </div>
         </nav>
+
+
     </header>
 
     <div class="header-wave" style="height: 150px; overflow: hidden;">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-            <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #4273b4;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 50%; width: 100%; position: absolute;">
+            <path d="M-2.82,116.94 C16.36,-8.38 146.16,15.28 501.12,13.31 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #6e96ca;">
 
             </path>
         </svg>

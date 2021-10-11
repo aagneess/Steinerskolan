@@ -1,8 +1,65 @@
 footer {
-  background-color: #6db97b;
+  background-color: var(--green);
   padding-bottom: 3rem;
-}
-section {
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
+}
+footer section {
+  display: flex;
+}
+footer article {
+  padding-right: 4rem;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer h2 {
+  font-family: "antropos";
+}
+footer p {
+  font-family: "main";
+  font-size: 18px;
+  line-height: 2rem;
+}
+footer a {
+  font-family: "main";
+  font-size: 18px;
+  line-height: 2rem;
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+
+/* ANIMATION ON SOCIAL LINKS */
+.social-links {
+  margin-right: 2rem;
+}
+.social-links:hover {
+  transform: scale();
+  animation: expand 0.8s;
+  cursor: pointer;
+}
+footer img {
+  width: 50px;
+}
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
