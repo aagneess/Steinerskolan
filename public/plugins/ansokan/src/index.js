@@ -32,12 +32,42 @@ registerBlockType("create-block/ansokan", {
 			source: "html",
 			selector: "h2",
 		},
-		heading: {
+		heading_1: {
 			type: "string",
 			source: "html",
 			selector: "h3",
 		},
-		body: {
+		body_1: {
+			type: "string",
+			source: "html",
+			selector: "p",
+		},
+		heading_2: {
+			type: "string",
+			source: "html",
+			selector: "h3",
+		},
+		body_2: {
+			type: "string",
+			source: "html",
+			selector: "p",
+		},
+		heading_3: {
+			type: "string",
+			source: "html",
+			selector: "h3",
+		},
+		body_3: {
+			type: "string",
+			source: "html",
+			selector: "p",
+		},
+		heading_4: {
+			type: "string",
+			source: "html",
+			selector: "h3",
+		},
+		body_4: {
 			type: "string",
 			source: "html",
 			selector: "p",

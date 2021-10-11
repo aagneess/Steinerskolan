@@ -1,18 +1,8 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
-/* :root {
-  --fuschia: #ed4b9e;
-  --iris: #4b4ded;
-  --peach: #f3d9da;
-  --onyx: #0e0e2c;
-  --evergreen: #31d0aa;
-  --slate: #4a4a68;
-  --light-slate: #8c8ca1;
-  --dorian: #ecf1f4;
-  --cloud: #fafcfe;
-} */
 
 :root {
   --purple: #a25dd8;
@@ -32,12 +22,16 @@
   src: url("./fonts/antropos.woff2") format("woff2");
 }
 @font-face {
+  font-family: "title";
+  src: url("./fonts/ArchitectsDaughter-Regular.woff2") format("woff2");
+}
+@font-face {
   font-family: "heading";
-  src: url("./fonts/WorkSans-Medium.woff2") format("woff2");
+  src: url("./fonts/Lato-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "main";
-  src: url("./fonts/WorkSans-Light.woff2") format("woff2");
+  src: url("./fonts/Lato-Light.woff2") format("woff2");
 }
 
 .pages {

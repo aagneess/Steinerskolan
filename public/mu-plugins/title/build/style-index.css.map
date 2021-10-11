@@ -1,0 +1,1 @@
+{"version":3,"file":"style-index.css","mappings":";;;AAAA;EACC;EACA;EACA;AACD;;AACA;EACC;EACA;EACA;AAED,C","sources":["webpack://title/./src/style.scss"],"sourcesContent":[".title-container {\n\tmargin: 3rem;\n\tcolor: #000;\n\tpadding: 3rem;\n}\n.title-container h3 {\n\tfont-family: \"title\";\n\tfont-size: 22px;\n\ttext-align: center;\n}\n"],"names":[],"sourceRoot":""}

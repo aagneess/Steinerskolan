@@ -35,3 +35,6 @@ nav a {
 nav img {
   width: 30px;
 }
+ul {
+  list-style: none;
+}
