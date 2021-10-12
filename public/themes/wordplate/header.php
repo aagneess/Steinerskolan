@@ -17,10 +17,10 @@
 
     <header>
 
-        <section class="logo">
+        <a class="logo" href="/">
             <img class="logo-image" src="http://localhost:8000/uploads/2021/10/Logotyp.svg" alt="Logga med skolbyggnad" />
             <img class="logo-text" src="http://localhost:8000/uploads/2021/10/RS.svg" alt="Rudolf Steiner textlogga" />
-        </section>
+        </a>
 
         <nav role="navigation">
             <?php $menuItems = menu('navigation'); ?>

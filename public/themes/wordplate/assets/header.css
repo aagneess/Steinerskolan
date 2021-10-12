@@ -40,14 +40,15 @@ nav img {
   display: none;
   position: absolute;
   z-index: 100;
-  background-color: white;
+  background-color: #cfdced;
   border-radius: 8px;
-  padding: 0 2em;
+  padding: 1rem;
 }
 
 .child-pages li {
   list-style: none;
   font-size: 0.9em;
+  line-height: 2em;
 }
 .child-pages li:hover {
   opacity: 0.7;
