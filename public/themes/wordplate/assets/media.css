@@ -9,4 +9,13 @@
   footer article {
     display: none;
   }
+  .wp-block-columns {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .pages {
+    margin: 10rem 25rem 10rem 25rem;
+  }
 }
