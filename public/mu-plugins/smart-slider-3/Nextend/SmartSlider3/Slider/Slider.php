@@ -304,13 +304,13 @@ class Slider extends AbstractRenderable {
             }
         }
         if (!$this->isGroup) {
-            $slider = $this->features->translateUrl->renderSlider($slider) . HTML::tag('ss3-loader', array(), '');
+            $slider = $this->features->translateUrl->replaceUrl($slider) . HTML::tag('ss3-loader', array(), '');
 
             $slider = $this->features->align->renderSlider($slider, $this->assets->sizes['width']);
             $slider = $this->features->margin->renderSlider($slider);
 
 
-            Css::addInline($this->sliderType->getStyle(), $this->elementId);
+            Css::addInline($this->features->translateUrl->replaceUrl($this->sliderType->getStyle()), $this->elementId);
 
 
             $jsInlineMode = Settings::get('javascript-inline', 'head');

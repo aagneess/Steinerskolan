@@ -25,29 +25,46 @@
         <nav role="navigation">
             <?php $menuItems = menu('navigation'); ?>
             <?php foreach ($menuItems as $menuItem) : ?>
-                <?php if (sizeof($menuItem->children) === 0) : ?>
+
+                <?php if (sizeof($menuItem->children) === 0) :
+                    // if (isset($_GET['page_id'])) {
+                    //     $pageId = $menuItem->object_id;
+                    //     $id = $_GET['page_id'];
+
+                    //     if ($id == $pageId) {
+                    //         // Current page
+                    //     }
+                    // }
+                ?>
                     <!-- SINGLE PAGES -->
                     <a class="single-page" href="<?= $menuItem->url; ?>">
                         <?= $menuItem->title; ?>
                     </a>
                 <?php else : ?>
                     <!-- PARENTS -->
-                    <a class="parent-pages" href="<?= $menuItem->url; ?>">
-                        <?= $menuItem->title; ?>
-                    </a>
+                    <div class="pages-container">
+                        <a class="parent-pages" href="<?= $menuItem->url; ?>">
+                            <?= $menuItem->title; ?> >
+                        </a>
+                        <ul class="child-pages">
+                            <?php foreach ($menuItem->children as $child) : ?>
+                                <li>
+                                    <a href="<?= $child->url ?>">
+                                        <?= $child->title; ?>
+                                    </a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+
 
                     <!-- CHILDREN -->
-                    </div class="sub-pages">
-                    <ul>
-                        <?php foreach ($menuItem->children as $child) : ?>
+                    <?php
+                    // continue;
+                    ?>
 
-                            <li>
-                                <a class="child-pages" href="<?= $child->url ?>">
-                                    <?= $child->title; ?>
-                                </a>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
+                    </div class="sub-pages">
+
                     </div>
 
                 <?php endif; ?>

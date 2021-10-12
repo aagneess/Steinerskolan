@@ -57,6 +57,8 @@ class SlideBackground {
 
     private function getBackgroundStyle($slide) {
 
+        $attributes = array();
+
         $style = '';
         $color = $slide->fill($slide->parameters->get('backgroundColor', ''));
         if (empty($color)) {
@@ -82,34 +84,43 @@ class SlideBackground {
                     $colorEnd .= 'ff';
                 }
             }
+
+            $startColor = Color::colorToRGBA($color);
+            $endColor   = Color::colorToRGBA($colorEnd);
+
+            $attributes['data-gradient']    = $gradient;
+            $attributes['data-color-start'] = $startColor;
+            $attributes['data-color-end']   = $endColor;
+
             switch ($gradient) {
                 case 'horizontal':
-                    $style .= 'background:linear-gradient(to right, ' . Color::colorToRGBA($color) . ' 0%,' . Color::colorToRGBA($colorEnd) . ' 100%);';
+                    $style .= 'background:linear-gradient(to right, ' . $startColor . ' 0%,' . $endColor . ' 100%);';
                     break;
                 case 'vertical':
-                    $style .= 'background:linear-gradient(to bottom, ' . Color::colorToRGBA($color) . ' 0%,' . Color::colorToRGBA($colorEnd) . ' 100%);';
+                    $style .= 'background:linear-gradient(to bottom, ' . $startColor . ' 0%,' . $endColor . ' 100%);';
                     break;
                 case 'diagonal1':
-                    $style .= 'background:linear-gradient(45deg, ' . Color::colorToRGBA($color) . ' 0%,' . Color::colorToRGBA($colorEnd) . ' 100%);';
+                    $style .= 'background:linear-gradient(45deg, ' . $startColor . ' 0%,' . $endColor . ' 100%);';
                     break;
                 case 'diagonal2':
-                    $style .= 'background:linear-gradient(135deg, ' . Color::colorToRGBA($color) . ' 0%,' . Color::colorToRGBA($colorEnd) . ' 100%);';
+                    $style .= 'background:linear-gradient(135deg, ' . $startColor . ' 0%,' . $endColor . ' 100%);';
                     break;
             }
         } else {
             if (strlen($color) == 8) {
 
-                $alpha = substr($color, 6, 2);
-                if ($alpha != '00') {
-                    $style = 'background-color: #' . substr($color, 0, 6) . ';';
-                    if ($alpha != 'ff') {
-                        $style .= "background-color: " . Color::colorToRGBA($color) . ";";
-                    }
-                }
+                $colorRGBA = Color::colorToRGBA($color);
+                $style     .= "background-color: " . Color::colorToRGBA($color) . ";";
+
+                $attributes['data-color'] = $colorRGBA;
+
+
             }
         }
 
-        return $style;
+        $attributes['style'] = $style;
+
+        return $attributes;
     }
 
     private function makeBackground($slide) {
@@ -170,20 +181,17 @@ class SlideBackground {
     }
 
     private function renderColor($slide) {
-        $backgroundColorStyle = $this->getBackgroundStyle($slide);
+        $backgroundAttributes = $this->getBackgroundStyle($slide);
 
-        if (!empty($backgroundColorStyle)) {
+        if (!empty($backgroundAttributes['style'])) {
 
-            $attributes = array(
-                'class' => 'n2-ss-slide-background-color',
-                "style" => $backgroundColorStyle
-            );
+            $backgroundAttributes['class'] = 'n2-ss-slide-background-color';
 
             if ($slide->parameters->get('backgroundColorOverlay', 0)) {
-                $attributes['data-overlay'] = 1;
+                $backgroundAttributes['data-overlay'] = 1;
             }
 
-            return Html::tag('div', $attributes, '');
+            return Html::tag('div', $backgroundAttributes, '');
         }
 
         return '';
@@ -240,20 +248,17 @@ class SlideBackground {
         }
 
         $attributes = array(
-            "class"      => 'n2-ss-slide-background-image',
-            "data-blur"  => $backgroundImageBlur,
-            "data-alt"   => $alt,
-            "data-title" => $title
+            "class"        => 'n2-ss-slide-background-image',
+            "data-blur"    => $backgroundImageBlur,
+            "data-opacity" => $opacity,
+            "data-x"       => $focusX,
+            "data-y"       => $focusY,
+            "data-alt"     => $alt,
+            "data-title"   => $title
         );
 
         if (!empty($style)) {
             $attributes['style'] = implode(';', $style);
-        }
-
-        if ($slide->isCurrentlyEdited()) {
-            $attributes['data-opacity'] = $opacity;
-            $attributes['data-x']       = $focusX;
-            $attributes['data-y']       = $focusY;
         }
 
         $sources = array();
