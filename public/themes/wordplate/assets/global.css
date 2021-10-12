@@ -33,11 +33,11 @@
   font-family: "main";
   src: url("./fonts/Lato-Light.woff2") format("woff2");
 }
-
 .pages {
-  padding: 10rem 15rem 10rem 15rem;
+  padding-top: 10rem;
 }
-.wp-block-columns {
+.wp-block-column {
   display: flex;
   justify-content: center;
+  margin-left: 0;
 }
