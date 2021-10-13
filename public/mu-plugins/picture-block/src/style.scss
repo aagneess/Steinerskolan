@@ -13,3 +13,13 @@
 	width: 400px;
 	border-radius: 100%;
 }
+@media screen and (max-width: 1000px) {
+	.circle-container {
+		height: 300px;
+		width: 300px;
+	}
+	.image-container {
+		height: 250px;
+		width: 250px;
+	}
+}

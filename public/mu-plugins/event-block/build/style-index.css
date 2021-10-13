@@ -1,56 +1,28 @@
 /*!***************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
-.alumni-right-container {
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.event-block {
   display: flex;
   align-items: center;
-  padding: 3rem;
-  border-top-left-radius: 20rem;
-  border-bottom-left-radius: 20rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
-.text-container {
-  padding-left: 2rem;
-  line-height: 2rem;
+.date-container {
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
-h3 {
-  font-family: "heading";
-}
-
-h4 {
-  font-family: "main-bold";
-  text-transform: uppercase;
-}
-
-p {
-  font-family: "main";
-}
-
-.alumni-right-container .circle-container {
-  height: 300px;
-  width: 300px;
-}
-
-.alumni-right-container .image-container {
-  height: 250px;
-  width: 250px;
-  border-radius: 100%;
-}
-
-@media screen and (max-width: 700px) {
-  .alumni-right-container {
-    flex-direction: column;
-    border-top-left-radius: 0rem;
-    border-bottom-left-radius: 0rem;
-    width: 100%;
-  }
-
-  .alumni-right-container .text-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
+.event-container {
+  padding: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
