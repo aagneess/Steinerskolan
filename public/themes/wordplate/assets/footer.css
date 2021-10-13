@@ -1,22 +1,25 @@
 footer {
-  background-color: var(--green);
-  padding-bottom: 3rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  margin-top: 70rem;
+  width: 100vw;
+  position: relative;
 }
+
 footer section {
+  margin-top: 25%;
   display: flex;
+  width: 100vw;
+  height: 25vw;
+  justify-content: space-around;
 }
 footer article {
-  padding-right: 4rem;
+  padding-right: 1rem;
 }
 footer ul {
   list-style: none;
   padding: 0;
 }
 footer h2 {
-  font-family: "heading";
+  font-family: "antropos";
 }
 footer p {
   font-family: "main";
@@ -39,10 +42,64 @@ button {
   height: 5rem;
 }
 
-/* ANIMATION ON SOCIAL LINKS */
-.social-links {
-  margin-right: 2rem;
+#social {
+  justify-content: center;
+  width: 100vw;
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
 }
+.footer-background {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  z-index: -4;
+}
+
+.footer-background-mobile {
+  position: absolute;
+  object-fit: cover;
+  z-index: -4;
+  width: 100vw;
+}
+
+.footer-background-mobile {
+  display: none;
+}
+
+.mobile-footer-container {
+  width: 100vw;
+  margin-top: 25vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.links-container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.links-container ul {
+  display: none;
+  flex-direction: column;
+  margin-left: 10vw;
+}
+
+.links-container.open ul {
+  display: flex;
+}
+
+.links-container p {
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: 800;
+  border-bottom: 1px solid var(--light-blue);
+}
+
+/* ANIMATION ON SOCIAL LINKS */
 .social-links:hover {
   transform: scale();
   animation: expand 0.8s;

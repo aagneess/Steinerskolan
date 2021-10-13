@@ -2,6 +2,8 @@ const hamburger = document.querySelector(".hamburger-menu");
 const closeMenu = document.querySelector(".close-menu");
 const wave = document.querySelector(".header-wave");
 const mobileNavigation = document.querySelector(".mobile-nav");
+const footerLinks = document.querySelectorAll(".links-container");
+
 const pagesContainerMobile = document.querySelectorAll(
   ".pages-container-mobile"
 );
@@ -32,5 +34,11 @@ closeMenu.addEventListener("click", () => {
 pagesContainerMobile.forEach((page) =>
   page.addEventListener("click", () => {
     page.classList.toggle("open");
+  })
+);
+
+footerLinks.forEach((link) =>
+  link.addEventListener("click", () => {
+    link.classList.toggle("open");
   })
 );

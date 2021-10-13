@@ -1,8 +1,5 @@
 /* NEEDS HAMBURGER MENU */
 @media screen and (max-width: 700px) {
-  footer article {
-    display: none;
-  }
   .wp-block-columns {
     display: block;
   }
@@ -52,5 +49,50 @@
   .logo .logo-text {
     margin-left: 0rem;
     top: 5rem;
+  }
+  footer a {
+    line-height: 0rem;
+  }
+
+  .social-links {
+    margin-right: 0rem;
+    width: 30%;
+    height: 30%;
+  }
+
+  footer article {
+    padding-right: 0.25rem;
+  }
+
+  footer h2 {
+    font-size: 0.7em;
+  }
+
+  footer a,
+  footer p {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-background {
+    display: none;
+  }
+
+  footer {
+    height: 100vh;
+  }
+
+  .links-container ul li a,
+  .links-container ul li p {
+    font-size: 1em;
+  }
+
+  footer section article {
+    display: none;
+  }
+
+  .footer-background-mobile {
+    display: flex;
   }
 }

@@ -93,7 +93,7 @@
 
                 <?php endif; ?>
             <?php endforeach; ?>
-
+        </nav>
 
     </header>
 
