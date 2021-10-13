@@ -5,11 +5,11 @@
   }
 }
 
-@media screen and (min-width: 1900px) {
+/* @media screen and (min-width: 1900px) {
   .pages {
     margin: 10rem 25rem 10rem 25rem;
   }
-}
+} */
 
 @media screen and (max-width: 1100px) {
   .pages-container a,
@@ -28,7 +28,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
   nav a,
   nav .pages-container {
     display: none;

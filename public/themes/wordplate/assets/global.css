@@ -12,9 +12,11 @@
   --green: #92cb9c;
   --teal: #347681;
   --blue: #4273b4;
+  --dark-blue: #26476f;
   --light-blue: #6e96ca;
   --grey: #ecf1f4;
   --white: #fafcfe;
+  --black: #292929;
 }
 
 @font-face {

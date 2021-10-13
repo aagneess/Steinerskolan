@@ -93,25 +93,7 @@ export default function Edit({ attributes, setAttributes }) {
 		</InspectorControls>,
 
 		// END OF COLOR SETTINGS
-		<div class="alumni-container">
-			<div
-				class="circle-container"
-				key="editable"
-				onChange={onChangeBackgroundColor}
-				style={{ background: backgroundColor }}
-				{...useBlockProps()}
-			></div>
-
-			<div
-				class="image-container"
-				style={{
-					backgroundImage: `url(${backgroundImage})`,
-					backgroundSize: "cover",
-					backgroundPosition: "center",
-					backgroundRepeat: "no-repeat",
-				}}
-			></div>
-
+		<div class="alumni-left-container">
 			<div class="text-container">
 				<RichText
 					key="editable"
@@ -138,6 +120,24 @@ export default function Edit({ attributes, setAttributes }) {
 					{...useBlockProps()}
 				/>
 			</div>
+
+			<div
+				class="circle-container"
+				key="editable"
+				onChange={onChangeBackgroundColor}
+				style={{ background: backgroundColor }}
+				{...useBlockProps()}
+			></div>
+
+			<div
+				class="image-container"
+				style={{
+					backgroundImage: `url(${backgroundImage})`,
+					backgroundSize: "cover",
+					backgroundPosition: "center",
+					backgroundRepeat: "no-repeat",
+				}}
+			></div>
 		</div>,
 	];
 }

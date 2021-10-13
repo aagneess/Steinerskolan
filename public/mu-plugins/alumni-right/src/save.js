@@ -13,7 +13,7 @@ export default function save({ attributes }) {
 	const blockProps = useBlockProps.save();
 
 	return (
-		<div style={{ background: containerColor }} class="alumni-container">
+		<div style={{ background: containerColor }} class="alumni-right-container">
 			<div
 				style={{ background: backgroundColor }}
 				class="circle-container"

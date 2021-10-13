@@ -4,7 +4,7 @@ import "./style.scss";
 import Edit from "./edit";
 import save from "./save";
 
-registerBlockType("create-block/alumni", {
+registerBlockType("create-block/alumni-right", {
 	attributes: {
 		backgroundImage: {
 			type: "string",
