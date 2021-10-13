@@ -19,6 +19,9 @@
         <a class="logo" href="/">
             <img class="logo-image" src="<?= get_template_directory_uri(); ?>/assets/logo/Logo.svg" alt="Logga med skolbyggnad" />
         </a>
+        <a class="logo logo-mobile" href="/">
+            <img class="logo-image" src="<?= get_template_directory_uri(); ?>/assets/logo/RS.svg" alt="Logga med skolbyggnad" />
+        </a>
         <div class="mobile-nav">
             <?php $menuItems = menu('navigation'); ?>
             <?php foreach ($menuItems as $menuItem) : ?>
@@ -45,11 +48,20 @@
 
                 <?php endif; ?>
             <?php endforeach; ?>
+            <div class="social-nav">
+                <button>
+                    <img src="<?= get_template_directory_uri(); ?>/assets/logo/fb.png" alt="facebook button" /></button>
+                <button>
+                    <img src="<?= get_template_directory_uri(); ?>/assets/logo/insta.png" alt="instagram button" /></button>
+            </div>
         </div>
         <div class="hamburger-menu">
             <div class="top"></div>
             <div class="middle"></div>
             <div class="bottom"></div>
+        </div>
+        <div class="close-menu">
+            <span>x</span>
         </div>
         <nav role="navigation">
 

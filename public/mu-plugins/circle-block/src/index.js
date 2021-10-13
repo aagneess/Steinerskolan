@@ -17,7 +17,7 @@ registerBlockType("create-block/circle-block", {
 		},
 		backgroundColor: {
 			type: "string",
-			default: "yellow",
+			default: "white",
 		},
 	},
 

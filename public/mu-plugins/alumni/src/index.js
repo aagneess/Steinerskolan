@@ -4,7 +4,7 @@ import "./style.scss";
 import Edit from "./edit";
 import save from "./save";
 
-registerBlockType("create-block/picture-block", {
+registerBlockType("create-block/alumni", {
 	attributes: {
 		backgroundImage: {
 			type: "string",
@@ -13,6 +13,25 @@ registerBlockType("create-block/picture-block", {
 		backgroundColor: {
 			type: "string",
 			default: "white",
+		},
+		containerColor: {
+			type: "string",
+			default: "white",
+		},
+		heading: {
+			type: "string",
+			source: "html",
+			selector: "h3",
+		},
+		info: {
+			type: "string",
+			source: "html",
+			selector: "h4",
+		},
+		body: {
+			type: "string",
+			source: "html",
+			selector: "p",
 		},
 	},
 	/**

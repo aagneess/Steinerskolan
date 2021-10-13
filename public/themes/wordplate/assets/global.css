@@ -30,6 +30,10 @@
   src: url("./fonts/Lato-Regular.woff2") format("woff2");
 }
 @font-face {
+  font-family: "main-bold";
+  src: url("./fonts/Lato-Black.woff2") format("woff2");
+}
+@font-face {
   font-family: "main";
   src: url("./fonts/Lato-Light.woff2") format("woff2");
 }
