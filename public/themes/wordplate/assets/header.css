@@ -90,16 +90,19 @@ nav img {
   position: absolute;
   left: 80%;
   width: 20%;
-  height: 100px;
+  height: 90px;
   z-index: 102;
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--black);
   margin: 0;
   border-top-left-radius: 32px;
 }
-
+.close-menu span {
+  color: white;
+  font-family: "main";
+}
 .opened {
   display: none;
 }
@@ -117,7 +120,7 @@ nav img {
 }
 
 .mobile-nav {
-  background-color: white;
+  background-color: var(--grey);
   width: 100vw;
   /* height: 100vh; */
   position: absolute;
@@ -126,7 +129,7 @@ nav img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .mobile-nav.opened {
