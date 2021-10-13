@@ -1,7 +1,7 @@
 header {
   background-color: var(--light-blue);
   padding: 2rem;
-  height: 100px;
+  height: 5.6em;
 }
 .header-wave {
   position: absolute;
@@ -19,18 +19,10 @@ nav a {
   text-decoration: none;
 }
 .logo .logo-image {
-  width: 200px;
+  width: 250px;
+  top: 3.5rem;
   position: absolute;
-  top: 6rem;
-  margin-left: 1.2rem;
   z-index: 100;
-}
-.logo .logo-text {
-  width: 200px;
-  position: absolute;
-  top: 4rem;
-  z-index: 100;
-  margin-left: 5rem;
 }
 nav img {
   width: 30px;

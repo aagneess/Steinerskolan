@@ -35,10 +35,11 @@
 
   <div class="social">
     <button class="social-links">
-      <img src="http://localhost:8000/uploads/2021/10/fb.png" alt="facebook button" /></button>
+      <img class="insta" src="<?= get_template_directory_uri(); ?>/assets/logo/fb.png" alt="facebook button" /></button>
     <button class="social-links">
-      <img src="http://localhost:8000/uploads/2021/10/insta.png" alt="instagram button" /></button>
+      <img class="facebook" src="<?= get_template_directory_uri(); ?>/assets/logo/insta.png" alt="instagram button" /></button>
   </div>
+  </nav>
 
 </footer>
 

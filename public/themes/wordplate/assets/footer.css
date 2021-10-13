@@ -36,6 +36,7 @@ footer a:hover {
 button {
   background-color: transparent;
   border: none;
+  height: 5rem;
 }
 
 /* ANIMATION ON SOCIAL LINKS */

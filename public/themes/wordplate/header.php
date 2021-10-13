@@ -17,8 +17,7 @@
 
     <header>
         <a class="logo" href="/">
-            <img class="logo-image" src="http://localhost:8000/uploads/2021/10/Logotyp.svg" alt="Logga med skolbyggnad" />
-            <img class="logo-text" src="http://localhost:8000/uploads/2021/10/RS.svg" alt="Rudolf Steiner textlogga" />
+            <img class="logo-image" src="<?= get_template_directory_uri(); ?>/assets/logo/Logo.svg" alt="Logga med skolbyggnad" />
         </a>
         <div class="mobile-nav">
             <?php $menuItems = menu('navigation'); ?>
@@ -84,24 +83,11 @@
             <?php endforeach; ?>
 
 
-
-
-
-
-            <div class="social">
-                <button class="social-links">
-                    <img class="insta" src="<?= get_template_directory_uri(); ?>/assets/logo/fb.png" alt="facebook button" /></button>
-                <button class="social-links">
-                    <img class="facebook" src="<?= get_template_directory_uri(); ?>/assets/logo/insta.png" alt="instagram button" /></button>
-            </div>
-        </nav>
-
-
     </header>
 
-    <div class="header-wave" style="height: 150px; overflow: hidden;">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 50%; width: 100%; position: absolute;">
-            <path d="M-2.82,116.94 C16.36,-8.38 146.16,15.28 501.12,13.31 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #6e96ca;">
+    <div class="header-wave" style="height: 100px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; position: absolute;">
+            <path d="M 0.41,147.53 C-3.10,13.31 36.96,15.28 500.84,13.31 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #6e96ca;">
 
             </path>
         </svg>
