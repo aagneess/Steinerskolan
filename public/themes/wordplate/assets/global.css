@@ -38,6 +38,8 @@
 }
 .wp-block-column {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-direction: row;
   margin-left: 0;
 }
