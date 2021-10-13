@@ -10,3 +10,20 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 750px) {
+  nav a,
+  nav .pages-container {
+    display: none;
+  }
+  div.hamburger-menu {
+    display: flex;
+  }
+  header {
+    padding: 0rem;
+  }
+  .logo .logo-text {
+    margin-left: 0rem;
+    top: 5rem;
+  }
+}

@@ -5,9 +5,9 @@
     <meta charset="<?= bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= get_theme_file_uri('assets/global.css') ?>">
-    <link rel="stylesheet" href="<?= get_theme_file_uri('assets/media.css') ?>">
     <link rel="stylesheet" href="<?= get_theme_file_uri('assets/header.css') ?>">
     <link rel="stylesheet" href="<?= get_theme_file_uri('assets/footer.css') ?>">
+    <link rel="stylesheet" href="<?= get_theme_file_uri('assets/media.css') ?>">
 
     <?= wp_head(); ?>
 </head>
@@ -16,25 +16,48 @@
     <?= wp_body_open(); ?>
 
     <header>
-
         <a class="logo" href="/">
             <img class="logo-image" src="http://localhost:8000/uploads/2021/10/Logotyp.svg" alt="Logga med skolbyggnad" />
             <img class="logo-text" src="http://localhost:8000/uploads/2021/10/RS.svg" alt="Rudolf Steiner textlogga" />
         </a>
+        <div class="mobile-nav">
+            <?php $menuItems = menu('navigation'); ?>
+            <?php foreach ($menuItems as $menuItem) : ?>
+                <?php if (sizeof($menuItem->children) === 0) :
+                ?>
+                    <!-- SINGLE PAGES -->
+                    <a class="single-page-mobile mobile-container" href="<?= $menuItem->url; ?>">
+                        <?= $menuItem->title; ?>
+                    </a>
+                <?php else : ?>
+                    <!-- PARENTS -->
+                    <div class="pages-container-mobile mobile-container">
+                        <span> <?= $menuItem->title; ?> > </span>
+                        <ul class="child-pages-mobile">
+                            <?php foreach ($menuItem->children as $child) : ?>
+                                <li>
+                                    <a href="<?= $child->url ?>">
+                                        <?= $child->title; ?>
+                                    </a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
 
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
+        <div class="hamburger-menu">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+        </div>
         <nav role="navigation">
+
             <?php $menuItems = menu('navigation'); ?>
             <?php foreach ($menuItems as $menuItem) : ?>
 
                 <?php if (sizeof($menuItem->children) === 0) :
-                    // if (isset($_GET['page_id'])) {
-                    //     $pageId = $menuItem->object_id;
-                    //     $id = $_GET['page_id'];
-
-                    //     if ($id == $pageId) {
-                    //         // Current page
-                    //     }
-                    // }
                 ?>
                     <!-- SINGLE PAGES -->
                     <a class="single-page" href="<?= $menuItem->url; ?>">
@@ -55,16 +78,6 @@
                                 </li>
                             <?php endforeach; ?>
                         </ul>
-                    </div>
-
-
-                    <!-- CHILDREN -->
-                    <?php
-                    // continue;
-                    ?>
-
-                    </div class="sub-pages">
-
                     </div>
 
                 <?php endif; ?>
