@@ -1,11 +1,5 @@
 /* NEEDS HAMBURGER MENU */
 @media screen and (max-width: 700px) {
-  nav a {
-    display: none;
-  }
-  .logo .logo-image {
-    display: none;
-  }
   footer article {
     display: none;
   }
@@ -20,14 +14,38 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .pages-container a,
+  .single-page {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  nav {
+    margin-left: 300px;
+  }
+  .pages-container a,
+  .single-page {
+    font-size: 0.6em;
+  }
+}
+
 @media screen and (max-width: 750px) {
   nav a,
   nav .pages-container {
     display: none;
   }
+  .logo .logo-image {
+    display: none;
+  }
+  .logo-mobile .logo-image {
+    display: flex;
+  }
   div.hamburger-menu {
     display: flex;
   }
+
   header {
     padding: 0rem;
   }
