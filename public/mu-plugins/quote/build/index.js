@@ -30,8 +30,7 @@ function Edit({
   setAttributes
 }) {
   const {
-    title,
-    body
+    title
   } = attributes; // custom functions
 
   function onChangeTitle(newTitle) {
@@ -40,26 +39,14 @@ function Edit({
     });
   }
 
-  function onChangeBody(newBody) {
-    setAttributes({
-      body: newBody
-    });
-  }
-
   return [(0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     class: "quote-container"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(RichText, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     key: "editable",
     tagName: "h2",
     placeholder: "Quote heading...",
     value: title,
     onChange: onChangeTitle
-  }, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)())), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    key: "editable",
-    tagName: "p",
-    placeholder: "Quote content...",
-    value: body,
-    onChange: onChangeBody
   }, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)())))];
 }
 
@@ -110,11 +97,6 @@ __webpack_require__.r(__webpack_exports__);
       type: "string",
       source: "html",
       selector: "h2"
-    },
-    body: {
-      type: "string",
-      source: "html",
-      selector: "p"
     }
   },
 
@@ -156,16 +138,12 @@ function save({
   attributes
 }) {
   const {
-    title,
-    body
+    title
   } = attributes;
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps.save();
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     class: "quote-container"
-  }, blockProps), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("h2", null, title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText.Content, {
-    tagName: "p",
-    value: body
-  }));
+  }, blockProps), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("h2", null, title));
 }
 
 /***/ }),

@@ -32,11 +32,6 @@ registerBlockType("create-block/quote", {
 			source: "html",
 			selector: "h2",
 		},
-		body: {
-			type: "string",
-			source: "html",
-			selector: "p",
-		},
 	},
 	/**
 	 * @see ./edit.js
