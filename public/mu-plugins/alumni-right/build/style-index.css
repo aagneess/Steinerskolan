@@ -13,6 +13,7 @@
 .text-container {
   padding-left: 2rem;
   line-height: 2rem;
+  width: 50%;
 }
 
 h3 {
