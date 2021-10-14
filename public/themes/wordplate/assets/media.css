@@ -5,12 +5,6 @@
   }
 }
 
-/* @media screen and (min-width: 1900px) {
-  .pages {
-    margin: 10rem 25rem 10rem 25rem;
-  }
-} */
-
 @media screen and (max-width: 1100px) {
   .pages-container a,
   .single-page {
@@ -81,6 +75,11 @@
 
   footer {
     height: 100vh;
+    background-color: rgb(152, 188, 211);
+  }
+
+  .mobile-footer-container {
+    display: flex;
   }
 
   .links-container ul li a,
@@ -93,6 +92,16 @@
   }
 
   .footer-background-mobile {
+    display: flex;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .social-mobile {
+    z-index: 10;
+    margin-top: 150%;
     display: flex;
   }
 }
