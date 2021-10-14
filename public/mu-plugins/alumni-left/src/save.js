@@ -25,11 +25,11 @@ export default function save({ attributes }) {
 			</div>
 			<div
 				style={{ background: backgroundColor }}
-				class="circle-container"
+				class="alumni-left-circle"
 				{...blockProps}
 			>
 				<div
-					class="image-container"
+					class="alumni-left-image"
 					{...blockProps}
 					style={{
 						backgroundImage: `url(${backgroundImage})`,
