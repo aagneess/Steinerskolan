@@ -10,6 +10,7 @@
 .circle-container {
   border-radius: 100%;
   display: flex;
+  text-align: center;
   justify-content: center;
   justify-self: flex-end;
   align-items: center;
