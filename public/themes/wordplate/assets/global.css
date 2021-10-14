@@ -42,10 +42,14 @@
 .pages {
   padding-top: 10rem;
 }
-.wp-block-column {
+.wp-block-columns {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
-  margin-left: 0;
+  align-items: center;
+}
+@media screen and (min-width: 700) {
+  .wp-block-column {
+    padding: 1rem;
+    flex-grow: 1;
+  }
 }

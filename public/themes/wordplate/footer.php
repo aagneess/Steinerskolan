@@ -4,8 +4,6 @@
 <footer>
   <img class="footer-background" src="<?= get_template_directory_uri(); ?>/assets/logo/Footer.svg" alt="Logga med skolbyggnad" />
   <img class="footer-background-mobile" src="<?= get_template_directory_uri(); ?>/assets/logo/Footer-mobile.svg" />
-
-
   <section>
 
     <div class="mobile-footer-container">
@@ -16,6 +14,15 @@
           <li><a href="">Tallkottan</a></li>
           <li><a href="">Skolprojekt</a></li>
           <li><a href="">Tidigare elever</a></li>
+        </ul>
+      </div>
+      <div class="links-container">
+        <p>Länkar ></p>
+        <ul>
+          <li><a href="">Waldorf 100</a></li>
+          <li><a href="">Waldorffederation</a></li>
+          <li><a href="">Waldorforganisation</a></li>
+          <li><a href="">Fler länkar...</a></li>
         </ul>
       </div>
       <div class="links-container">
@@ -49,6 +56,15 @@
         <li><a href="">Tallkottan</a></li>
         <li><a href="">Skolprojekt</a></li>
         <li><a href="">Tidigare elever</a></li>
+      </ul>
+    </article>
+    <article>
+      <h2>Länkar ></h2>
+      <ul>
+        <li><a href="">Waldorf 100</a></li>
+        <li><a href="">Waldorffederation</a></li>
+        <li><a href="">Waldorforganisation</a></li>
+        <li><a href="">Fler länkar...</a></li>
       </ul>
     </article>
 

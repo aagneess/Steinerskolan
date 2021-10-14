@@ -1,5 +1,4 @@
 footer {
-  margin-top: 70rem;
   width: 100vw;
   position: relative;
 }
@@ -19,15 +18,15 @@ footer ul {
   padding: 0;
 }
 footer h2 {
-  font-family: "antropos";
+  font-family: "heading";
 }
 footer p {
-  font-family: "main";
-  font-size: 18px;
+  font-family: "heading";
+  font-size: 14px;
   line-height: 2rem;
 }
 footer a {
-  font-family: "main";
+  font-family: "heading";
   font-size: 18px;
   line-height: 2rem;
   text-decoration: none;
@@ -39,7 +38,6 @@ footer a:hover {
 button {
   background-color: transparent;
   border: none;
-  /* height: 5rem; */
 }
 
 .social,
