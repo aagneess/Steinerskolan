@@ -6,21 +6,23 @@ export default function save({ attributes }) {
 	const blockProps = useBlockProps.save();
 
 	return (
-		<div
-			style={{ background: backgroundColor }}
-			class="circle-container"
-			{...blockProps}
-		>
+		<div class="picture-container">
 			<div
-				class="image-container"
+				style={{ background: backgroundColor }}
+				class="circle-container"
 				{...blockProps}
-				style={{
-					backgroundImage: `url(${backgroundImage})`,
-					backgroundSize: "cover",
-					backgroundPosition: "center",
-					backgroundRepeat: "no-repeat",
-				}}
-			></div>
+			>
+				<div
+					class="image-container"
+					{...blockProps}
+					style={{
+						backgroundImage: `url(${backgroundImage})`,
+						backgroundSize: "cover",
+						backgroundPosition: "center",
+						backgroundRepeat: "no-repeat",
+					}}
+				></div>
+			</div>
 		</div>
 	);
 }

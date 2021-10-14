@@ -56,22 +56,24 @@ export default function Edit({ attributes, setAttributes }) {
 			</PanelBody>
 			,
 		</InspectorControls>,
-
-		<div
-			class="pictureframe-container"
-			key="editable"
-			onChange={onChangeBackgroundColor}
-			style={{ background: backgroundColor }}
-			{...useBlockProps()}
-		></div>,
-		<div
-			class="image-container"
-			style={{
-				backgroundImage: `url(${backgroundImage})`,
-				backgroundSize: "cover",
-				backgroundPosition: "center",
-				backgroundRepeat: "no-repeat",
-			}}
-		></div>,
+		<div class="picture-container">
+			<div
+				class="circle-container"
+				key="editable"
+				onChange={onChangeBackgroundColor}
+				style={{ background: backgroundColor }}
+				{...useBlockProps()}
+			></div>
+			,
+			<div
+				class="image-container"
+				style={{
+					backgroundImage: `url(${backgroundImage})`,
+					backgroundSize: "cover",
+					backgroundPosition: "center",
+					backgroundRepeat: "no-repeat",
+				}}
+			></div>
+		</div>,
 	];
 }
