@@ -2,8 +2,8 @@
 </div>
 
 <footer>
-  <img class="footer-background" src="<?= get_template_directory_uri(); ?>/assets/logo/footer.svg" />
-  <img class="footer-background-mobile" src="<?= get_template_directory_uri(); ?>/assets/logo/footer-mobile.svg" />
+  <img class="footer-background" src="<?= get_template_directory_uri(); ?>/assets/logo/Footer.svg" alt="Logga med skolbyggnad" />
+  <img class="footer-background-mobile" src="<?= get_template_directory_uri(); ?>/assets/logo/Footer-mobile.svg" />
 
 
   <section>
