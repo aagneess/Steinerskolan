@@ -171,7 +171,7 @@ function save({
     style: {
       background: backgroundColor
     },
-    class: "circle-container"
+    class: "circle-block-container"
   }, blockProps), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("h3", {
     style: {
       color: titleColor

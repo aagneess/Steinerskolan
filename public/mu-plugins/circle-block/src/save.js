@@ -9,7 +9,7 @@ export default function save({ attributes }) {
 		<div>
 			<div
 				style={{ background: backgroundColor }}
-				class="circle-container"
+				class="circle-block-container"
 				{...blockProps}
 			>
 				<h3 style={{ color: titleColor }}>{heading}</h3>
