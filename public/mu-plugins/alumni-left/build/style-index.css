@@ -30,12 +30,16 @@ p {
   font-family: "main";
 }
 
-.alumni-left-container .alumni-circle {
+.alumni-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
   height: 300px;
   width: 300px;
 }
 
-.alumni-left-container .alumni-image {
+.alumni-image {
   height: 250px;
   width: 250px;
   border-radius: 100%;
