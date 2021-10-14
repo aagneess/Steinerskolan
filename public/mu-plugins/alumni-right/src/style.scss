@@ -20,11 +20,15 @@ h4 {
 p {
 	font-family: "main";
 }
-.alumni-right-container .alumni-circle {
+.alumni-right-circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
 	height: 300px;
 	width: 300px;
 }
-.alumni-right-container .alumni-image {
+.alumni-right-image {
 	height: 250px;
 	width: 250px;
 	border-radius: 100%;

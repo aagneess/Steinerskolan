@@ -110,14 +110,14 @@ function Edit({
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     class: "alumni-right-container"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    class: "alumni-circle",
+    class: "alumni-right-circle",
     key: "editable",
     onChange: onChangeBackgroundColor,
     style: {
       background: backgroundColor
     }
   }, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)())), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
-    class: "alumni-image",
+    class: "alumni-right-image",
     style: {
       backgroundImage: "url(".concat(backgroundImage, ")"),
       backgroundSize: "cover",
@@ -251,9 +251,9 @@ function save({
     style: {
       background: backgroundColor
     },
-    class: "alumni-circle"
+    class: "alumni-right-circle"
   }, blockProps), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    class: "alumni-image"
+    class: "alumni-right-image"
   }, blockProps, {
     style: {
       backgroundImage: "url(".concat(backgroundImage, ")"),

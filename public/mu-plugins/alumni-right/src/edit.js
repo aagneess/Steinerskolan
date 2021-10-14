@@ -95,7 +95,7 @@ export default function Edit({ attributes, setAttributes }) {
 		// END OF COLOR SETTINGS
 		<div class="alumni-right-container">
 			<div
-				class="alumni-circle"
+				class="alumni-right-circle"
 				key="editable"
 				onChange={onChangeBackgroundColor}
 				style={{ background: backgroundColor }}
@@ -103,7 +103,7 @@ export default function Edit({ attributes, setAttributes }) {
 			></div>
 
 			<div
-				class="alumni-image"
+				class="alumni-right-image"
 				style={{
 					backgroundImage: `url(${backgroundImage})`,
 					backgroundSize: "cover",
