@@ -2,11 +2,12 @@
 </div>
 
 <footer>
-  <img class="footer-background" src="<?= get_template_directory_uri(); ?>/assets/logo/footer.svg" />
-  <img class="footer-background-mobile" src="<?= get_template_directory_uri(); ?>/assets/logo/footer-mobile.svg" />
+  <img class="footer-background" src="<?= get_template_directory_uri(); ?>/assets/logo/Footer.svg" alt="Logga med skolbyggnad" />
+  <img class="footer-background-mobile" src="<?= get_template_directory_uri(); ?>/assets/logo/Footer-mobile.svg" />
 
 
   <section>
+
     <div class="mobile-footer-container">
       <div class="links-container">
         <p>Om skolan ></p>
@@ -39,6 +40,7 @@
         </ul>
       </div>
     </div>
+
     <article>
       <h2>Vår skola</h2>
       <ul>
@@ -64,14 +66,19 @@
         Expedition: 031-21 46 32<br>
         Vaktmästare: 0705-11 50 98</p>
     </article>
-    <!-- <div id="social">
+    <div class="social">
       <button class="social-links">
         <img class="insta" src="<?= get_template_directory_uri(); ?>/assets/logo/fb.png" alt="facebook button" /></button>
       <button class="social-links">
         <img class="facebook" src="<?= get_template_directory_uri(); ?>/assets/logo/insta.png" alt="instagram button" /></button>
-    </div> -->
+    </div>
   </section>
-
+  <div class="social-mobile">
+    <button class="social-links">
+      <img class="insta" src="<?= get_template_directory_uri(); ?>/assets/logo/fb.png" alt="facebook button" /></button>
+    <button class="social-links">
+      <img class="facebook" src="<?= get_template_directory_uri(); ?>/assets/logo/insta.png" alt="instagram button" /></button>
+  </div>
 
 </footer>
 
