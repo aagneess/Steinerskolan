@@ -122,7 +122,7 @@ export default function Edit({ attributes, setAttributes }) {
 			</div>
 
 			<div
-				class="circle-container"
+				class="alumni-circle"
 				key="editable"
 				onChange={onChangeBackgroundColor}
 				style={{ background: backgroundColor }}
@@ -130,7 +130,7 @@ export default function Edit({ attributes, setAttributes }) {
 			></div>
 
 			<div
-				class="image-container"
+				class="alumni-image"
 				style={{
 					backgroundImage: `url(${backgroundImage})`,
 					backgroundSize: "cover",
