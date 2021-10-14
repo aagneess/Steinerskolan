@@ -14,7 +14,7 @@ export default function save({ attributes }) {
 
 	return (
 		<div style={{ background: containerColor }} class="alumni-left-container">
-			<div class="text-container" {...blockProps}>
+			<div class="left-text-container" {...blockProps}>
 				<h3>{heading}</h3>
 				<RichText.Content
 					tagName="h4"

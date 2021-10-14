@@ -94,7 +94,7 @@ export default function Edit({ attributes, setAttributes }) {
 
 		// END OF COLOR SETTINGS
 		<div class="alumni-left-container">
-			<div class="text-container">
+			<div class="left-text-container">
 				<RichText
 					key="editable"
 					tagName="h3"

@@ -12,7 +12,7 @@
   margin-bottom: 1rem;
 }
 
-.text-container {
+.left-text-container {
   padding-right: 2rem;
   line-height: 2rem;
   width: 50%;
@@ -54,7 +54,7 @@ p {
     width: 100%;
   }
 
-  .text-container {
+  .left-text-container {
     padding-bottom: 2rem;
     width: 100%;
   }
