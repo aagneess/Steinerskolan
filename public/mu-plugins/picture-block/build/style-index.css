@@ -7,24 +7,28 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.picture-container .circle-container {
+.picture-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 450px;
   width: 450px;
+  border-radius: 100%;
 }
 
-.picture-container .image-container {
+.picture-image {
   height: 400px;
   width: 400px;
   border-radius: 100%;
 }
 
 @media screen and (max-width: 1000px) {
-  .picture-container .circle-container {
+  .picture-circle {
     height: 300px;
     width: 300px;
   }
 
-  .picture-container .image-container {
+  .picture-image {
     height: 250px;
     width: 250px;
   }
